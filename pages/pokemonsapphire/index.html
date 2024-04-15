@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="icon" type="image/png" href="/assets/ln.png">
+        <title>Exam Helper - GCSE Revision</title>
+        <style>
+            body{
+                background:
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url(/assets/lnbg.png);
+            }
+            h2 {
+                color: aliceblue;
+                font-family: "Montserrat", sans-serif;
+                font-size: 30px;
+                padding-top: 36px;
+            }
+            p {
+                color: aliceblue;
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                margin-top: 0;
+            }
+            .gameTitle {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .gameInfo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .htmlWindow {
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+            }
+            .pad {
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }              
+        </style>
+    </head>
+    <body>
+        <div class="gameTitle"><h2>Pokemon Sapphire</h2></div>
+        <div class="pad"><p>Save in context menu (3 bars menu)</br>If controls are broken, click the controller and press Reset.</br>L / L Shoulder = Q</br>R / R Shoulder = E</br>Movement = WASD</br>Select = V</br>Start = B</br>B = K</br>A = L</br></p></div>
+        <div id="fullscreen" class="htmlWindow">  
+            <div style='width:640px;height:480px;max-width:100%'>
+                <div id='game'></div>
+            </div>
+            <div class="gameInfo"></div>
+            <script type='text/javascript'>
+                EJS_player = '#game';
+                // System, replace with whatever the rom is
+                EJS_core = 'gba';
+                // BIOS, should be in /bios/ folder
+                // EJS_biosUrl = '/bios/gba_bios.bin';
+                EJS_gameUrl = '/roms/gba/sapphirepm.gba';
+                EJS_pathtodata = '/emujs/data/';
+                EJS_startOnLoaded = true
+                EJS_volume = 0
+                EJS_Buttons = {
+                    playPause: true,
+                    restart: true,
+                    mute: true,
+                    settings: false,
+                    fullscreen: true,
+                    saveState: true,
+                    loadState: true,
+                    screenRecord: false,
+                    cheat: false,
+                    volume: true,
+                    saveSavFiles: false,
+                    loadSavFiles: false,
+                    quickSave: true,
+                    quickLoad: true,
+                    screenshot: false,
+                    cacheManager: true,
+                    gamepad: true,
+                }
+                EJS_defaultControls = {
+                    0: {
+                        0: {
+                            // B button, A for nintendo
+                            'value': 'k'
+                        },
+                        1: {
+                            // Y button, X for nintendo
+                            'value': 'i'
+                        },
+                        2: {
+                            // Select
+                            'value': 'v'
+                        },
+                        3: {
+                            // Start
+                            'value': 'b'
+                        },
+                        4: {
+                            // Up
+                            'value': 'w'
+                        },
+                        5: {
+                            // Down
+                            'value': 's'
+                        },
+                        6: {
+                            // Left
+                            'value': 'a'
+                        },
+                        7: {
+                            // Right
+                            'value': 'd'
+                        },
+                        8: {
+                            // A button, B for nintendo
+                            'value': 'l'
+                        },
+                        9: {
+                            // X button, Y for nintendo
+                            'value': 'j'
+                        },
+                        10: {
+                            // L shoulder
+                            'value': 'q'
+                        },
+                        11: {
+                            // R shoulder
+                            'value': 'e'
+                        },
+                    },
+                    1: {},
+                    2: {},
+                    3: {}
+                }
+            </script>
+            <script src='/emujs/data/loader.js'></script>
+        </div> 
+    </body>
+    <body><div id="nav-placeholder"></div><script>$(function(){$("#nav-placeholder").load("/navbar.html");});</script></body>
+</html>
