@@ -48,8 +48,8 @@
         </style>
     </head>
     <body>
-        <div class="gameTitle"><h2>The Legend Of Zelda: Ocarina Of Time</h2></div>
-        <div class="pad"><p>If controls are broken, click the controller and press Reset.</br>L / L Shoulder = Q</br>R / R Shoulder = E</br>Z / Z Shoulder = R</br>Movement = WASD</br>Camera = IJKL</br>Dpad = Arrow Keys</br>Start = V</br>B = H</br>A = N</br></p></div>
+        <div class="gameTitle"><h2>Animal Crossing: Wild World</h2></div>
+        <div class="pad"><p>Temporary link, saves on the 17th Apr. may be lost. Please export your saves.</br>If controls are broken, click the controller and press Reset.</br>L / L Shoulder = Q</br>R / R Shoulder = E</br>Movement = WASD</br>Select = V</br>Start = B</br>B = K</br>A = L</br></p></div>
         <div id="fullscreen" class="htmlWindow">  
             <div style='width:640px;height:480px;max-width:100%'>
                 <div id='game'></div>
@@ -58,10 +58,10 @@
             <script type='text/javascript'>
                 EJS_player = '#game';
                 // System, replace with whatever the rom is
-                EJS_core = 'n64';
+                EJS_core = 'nds';
                 // BIOS, should be in /bios/ folder
                 // EJS_biosUrl = '/bios/gba_bios.bin';
-                EJS_gameUrl = '/roms/n64/oot.z64';
+                EJS_gameUrl = 'https://storage.cloud.google.com/edvnnroms/acww.nds';
                 EJS_pathtodata = '/emujs/data/';
                 EJS_startOnLoaded = true
                 EJS_volume = 0
@@ -88,31 +88,39 @@
                     0: {
                         0: {
                             // B button, A for nintendo
-                            'value': 'n'
+                            'value': 'k'
+                        },
+                        1: {
+                            // Y button, X for nintendo
+                            'value': 'i'
+                        },
+                        2: {
+                            // Select
+                            'value': 'v'
                         },
                         3: {
                             // Start
-                            'value': 'v'
+                            'value': 'b'
                         },
                         4: {
                             // Up
-                            'value': 'up arrow'
+                            'value': 'w'
                         },
                         5: {
                             // Down
-                            'value': 'down arrow'
+                            'value': 's'
                         },
                         6: {
                             // Left
-                            'value': 'left arrow'
+                            'value': 'a'
                         },
                         7: {
                             // Right
-                            'value': 'right arrow'
+                            'value': 'd'
                         },
-                        1: {
+                        8: {
                             // A button, B for nintendo
-                            'value': 'h'
+                            'value': 'l'
                         },
                         9: {
                             // X button, Y for nintendo
@@ -125,43 +133,6 @@
                         11: {
                             // R shoulder
                             'value': 'e'
-                        },
-                        12: {
-                            // Z shoulder
-                            'value': 'r'
-                        },
-
-                        19: {
-                            // L STICK UP
-                            'value': 'w'
-                        },
-                        18: {
-                            // L STICK DOWN
-                            'value': 's'
-                        },
-                        17: {
-                            // L STICK LEFT
-                            'value': 'a'
-                        },
-                        16: {
-                            // L STICK RIGHT
-                            'value': 'd'
-                        },
-                        23: {
-                            // R  STICK UP
-                            'value': 'i'
-                        },
-                        22: {
-                            // R STICK DOWN
-                            'value': 'k'
-                        },
-                        21: {
-                            // R STICK LEFT
-                            'value': 'j'
-                        },
-                        20: {
-                            // R STICK RIGHT
-                            'value': 'l'
                         },
                     },
                     1: {},
